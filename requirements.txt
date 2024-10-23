@@ -1,0 +1,47 @@
+# Transformers library for loading pre-trained models (XGLM in this case)
+transformers==4.31.0
+
+# PyTorch for model operations (transformers depend on torch)
+torch==2.0.1
+
+# Flask for backend API
+Flask==2.3.2
+
+# Scikit-learn for TF-IDF vectorizer and cosine similarity
+scikit-learn==1.3.0
+
+# Gradio for frontend interface
+gradio==4.44.0
+
+# NLTK for BLEU score calculation (evaluation metrics)
+nltk==3.8.1
+
+# Rouge for ROUGE score calculation
+rouge-score==0.1.2
+
+# JSON for working with datasets
+jsonschema==4.17.3
+
+# Any additional dependencies
+aiofiles==23.2.1
+anyio==4.4.0
+ffmpy==0.4.0
+fastapi==0.115.0
+httpx==0.27.2
+huggingface-hub==0.25.1
+importlib-resources==6.4.5
+jinja2==3.1.4
+markupsafe==2.1.5
+matplotlib==3.9.2
+numpy==2.1.0
+orjson==3.10.7
+packaging==24.1
+pandas==2.2.3
+pillow==10.4.0
+pydantic==2.9.2
+pydub==0.25.1
+python-multipart==0.0.12
+pyyaml==6.0.2
+ruff==0.6.9
+semantic-version==2.10.0
+tomlkit==0.12.0

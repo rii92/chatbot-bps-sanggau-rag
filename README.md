@@ -1,14 +1,18 @@
----
-title: Chatbot Bootcamp
-emoji: 🔥
-colorFrom: purple
-colorTo: purple
-sdk: gradio
-sdk_version: 5.3.0
-app_file: app.py
-pinned: false
-license: mit
-short_description: for portfolio chatbot rag
----
+# Chatbot dengan XGLM dan Gradio
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+Proyek ini adalah chatbot berbasis Flask dan Gradio yang menggunakan model XGLM untuk memberikan respons dalam bahasa Indonesia.
+
+## Cara Menjalankan
+
+1. Pastikan semua dependensi diinstal:
+pip install -r requirements.txt
+
+markdown
+Copy code
+
+2. Jalankan aplikasi:
+python app.py
+
+Copy code
+
+Aplikasi ini menggunakan Gradio untuk antarmuka pengguna dan Flask untuk API backend.
