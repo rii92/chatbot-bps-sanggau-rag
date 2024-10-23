@@ -39,7 +39,7 @@ def retrieve_answer(user_question):
 
 # Generate response using XGLM
 def generate_response(user_input, retrieved_answer):
-    input_text = f"{retrieved_answer}"
+    input_text = f"pertanyaan: {user_input}, jawaban: {retrieved_answer}"
     inputs = tokenizer(input_text, return_tensors="pt")
     outputs = model.generate(
         inputs['input_ids'], 
@@ -70,7 +70,7 @@ def chatbot_response(user_input):
     if user_input:
         retrieved_answer = retrieve_answer(user_input)
         response = generate_response(user_input, retrieved_answer)
-        return f"Chatbot: {response}\n\nRetrieved Answer: {retrieved_answer}"
+        return f"{response}\n\nRetrieved Answer: {retrieved_answer}"
 
 def chat_interface(user_input, history=[]):
     history.append(("Anda: " + user_input, "Chatbot: " + chatbot_response(user_input)))
